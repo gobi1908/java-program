@@ -1,0 +1,73 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+
+    public static void main(String[] args)
+    {
+        Scanner ro=new Scanner(System.in);
+        int n=ro.nextInt();
+         int n1=ro.nextInt();
+        
+        char op=ro.next().charAt(0);
+        cal obj=new cal();
+        switch(op)
+        {
+                case'+':
+                obj.add(n,n1);
+                break;
+                
+                
+                case'-':
+                obj.sub(n,n1);
+                break;
+                
+                
+                case'*':
+                obj.mul(n,n1);
+                break;
+                
+                
+                case'/':
+                obj.div(n,n1);
+                break;
+                
+                case'%':
+                obj.mod(n,n1);
+                break;
+                
+            default:
+               System.out.println("Invalid Input");
+                
+        }
+            
+        }
+}
+
+
+class cal
+{
+    
+
+    void add(int a,int b)
+    {
+     System.out.printf("Addition of two number is %.1f",(float)a+b);
+}
+void sub(int a,int b)
+    {
+     System.out.printf("Subtraction of two number is %.1f",(float)a-b);
+}
+void mul(int a,int b)
+    {
+     System.out.printf("Multiplication of two number is %.1f",(float)a*b);
+}
+void div(int a,int b)
+    {
+     System.out.printf("Division of two number is %.1f",(float)a/b);
+}
+void mod(int a,int b)
+    {
+     System.out.printf("Modulus of two number is %.1f",(float)a%b);
+}
+}
