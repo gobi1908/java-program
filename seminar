@@ -69,7 +69,7 @@ public class Main
 4. all three types of loops: for, while, and do-while, to perform the same task — printing the even numbers from 1 to a user-specified number.
 
 import java.util.Scanner;
-public class AllLoopsExample
+public class Main
 {
     public static void main(String[] args) 
 {
