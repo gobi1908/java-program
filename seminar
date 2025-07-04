@@ -2,14 +2,17 @@
 
 
 import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        int i = 2;  // Start with the first even number
+public class Main
+{
+    public static void main(String[] args)
+{
+        int i = 2; 
 
-        // Use while loop to print even numbers from 1 to 20
-        while (i <= 20) {
+       
+        while (i <= 20) 
+{
             System.out.println(i);
-            i += 2;  // Increment by 2 to get the next even number
+            i += 2; 
         }
     }
 }
@@ -18,19 +21,24 @@ public class Main {
 
 
  2. do-while loop program where the user inputs a range, and the program prints all even numbers between 1 and that range
-import java.util.Scanner;
 
-public class EvenNumbers {
-    public static void main(String[] args) {
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+{
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter the ending number: ");
+
         int end = scanner.nextInt();
 
         int i = 2;
-        do {
+        do{
             System.out.println(i);
             i += 2;
-        } while (i <= end);
+        } 
+while (i <= end);
     }
 }
 
@@ -40,13 +48,16 @@ public class EvenNumbers {
 
 import java.util.Scanner;
 
-public class EvenNumbers {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+{
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the ending number: ");
         int end = scanner.nextInt();
 
-        for (int i = 2; i <= end; i += 2) {
+        for (int i = 2; i <= end; i += 2)
+        {
             System.out.println(i);
         }
 
@@ -58,35 +69,39 @@ public class EvenNumbers {
 4. all three types of loops: for, while, and do-while, to perform the same task — printing the even numbers from 1 to a user-specified number.
 
 import java.util.Scanner;
-
-public class AllLoopsExample {
-    public static void main(String[] args) {
+public class AllLoopsExample
+{
+    public static void main(String[] args) 
+{
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the ending number: ");
         int end = scanner.nextInt();
 
-        // Using for loop
         System.out.println("Using for loop:");
-        for (int i = 2; i <= end; i += 2) {
+
+        for (int i = 2; i <= end; i += 2) 
+        {
             System.out.println(i);
         }
 
-        // Using while loop
+        
         System.out.println("Using while loop:");
         int i = 2;
-        while (i <= end) {
+        while (i <= end) 
+        {
             System.out.println(i);
             i += 2;
         }
 
-        // Using do-while loop
+        
         System.out.println("Using do-while loop:");
         i = 2;
         do {
             System.out.println(i);
             i += 2;
-        } while (i <= end);
+        }
+            while (i <= end);
 
-        scanner.close();
+       
     }
 }
